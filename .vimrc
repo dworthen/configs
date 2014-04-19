@@ -2,12 +2,14 @@ set nocompatible               " be iMproved
 filetype on                   " required!
 set mouse=a
 syntax on
+filetype plugin indent on
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 " Leader remap
 let mapleader=","
 
+set pastetoggle=<F2>
 " numbers
 " set number
 
@@ -54,8 +56,9 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'mattn/emmet-vim'
-Bundle 'Valloric/YouCompleteMe.git'
 Bundle 'tpope/vim-surround.git'
+" Clojure
+Bundle 'guns/vim-clojure-static'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
